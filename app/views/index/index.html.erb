@@ -1,7 +1,12 @@
+<!-- Partials -->
+<%=render(:partial => "shared/navigation") %>
+<%= render(:partial => "shared/header") %>
+
 <!-- Spa Page -->
 <%= flash_alerts() %>
 
 <!-- About Section -->
+
 <% @about.each do |f|%>
   <h1><%= f.main_title%></h1>
   <h2><%= f.second_title%></h2>
