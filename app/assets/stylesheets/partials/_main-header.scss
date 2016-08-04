@@ -1,0 +1,81 @@
+@import 'partials/global';
+@import 'mixins/mixins';
+//Mixins
+// Mobile first
+header {
+  position: relative;
+  width: 100%;
+  background-image: image-url('bg.jpg');
+  text-align: center;
+  color: white;
+/* Create the parallax scrolling effect */
+  // background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .vignette {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(34, 40, 44, 0.60);
+  }
+}
+
+.header-section {
+  position: relative;
+  text-align: center;
+  padding: 200px 15px 200px;
+  width: 100%;
+}
+
+.headline {
+  .line {
+    width: 100px;
+    border-width: 4px;
+    border-color: white;
+  }
+  h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 20px 0;
+    font-size: 30px;
+    text-shadow: 2px 2px rgb(23, 21, 20);
+  }
+}
+
+
+@include breakpoint-1200-sm {
+  header{
+    min-height: 100%;
+  }
+  .header-section {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 0 50px;
+      // headline
+    .headline {
+      height: 100%;
+      max-width: 1000px;
+      margin: 20px auto;
+      .line {
+        width: 500px;
+        border-width: 4px;
+        border-color: white;
+      }
+
+      h1 {
+        font-size: 90px;
+        margin: 20px auto;
+      }
+      a.btn {
+        margin: 20px 0;
+      }
+    }
+    // end
+  }
+}

@@ -1,0 +1,5 @@
+<h1>Update About</h1>
+<%= form_for(:about, :url => {:action => "update", :id => @about.id}) do |f|%>
+  <%= render(:partial => "form", :locals => {:f => f})%>
+  <%=f.submit('Update About') %>
+<% end %>

@@ -1,0 +1,55 @@
+//Global Variables
+$primary-color: #50E3C2;
+$font-stack: "Open Sans", sans-serif;
+
+//Media Query Breakpoints
+/*Global Styles*/
+body,html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,p {
+  font-family: $font-stack;
+  margin: 0;
+}
+p {
+  font-size: 18px;
+}
+
+/*i-1Global styles*/
+
+//Button Global Style
+  .btn-sharp {
+    padding: 18px 24px;
+    background: $primary-color;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 0;
+    color:#fff;
+    transition: all 0.30s ease-in-out;
+    &:link {
+      color:white
+    }
+    &:visited{
+      color:white;
+    }
+    &:hover {
+      background-color: rgb(44, 231, 231);
+      color: white;
+      outline: none;
+    }
+    &:active {
+      outline: none;
+      color:white;
+    }
+  }

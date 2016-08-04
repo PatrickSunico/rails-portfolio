@@ -1,0 +1,2 @@
+module AboutSectionHelper
+end
