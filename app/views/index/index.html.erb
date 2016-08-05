@@ -7,11 +7,14 @@
 
 <!-- About Section -->
 
-<% @about.each do |f|%>
-  <h1><%= f.main_title%></h1>
-  <h2><%= f.second_title%></h2>
-<p><%= f.description%></p>
-
-
-
-<%end%>
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-content col-lg-12">
+          <% @about.each do |f|%>
+            <%= render(:partial => "shared/about-section", :collections => @about, :locals => {:f => f})%>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </section>
