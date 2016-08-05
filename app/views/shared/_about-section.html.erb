@@ -5,4 +5,4 @@
 <%= image_tag("portrait.png", alt: "Patrick") %>
 <h2><%= f.second_title%></h2>
 <p class="lead"><%= f.description%></p>
-<a href="" class="btn btn-sharp"> Download my Resume</a>
+<%= link_to "Download" ,download_path, :class => "btn btn-sharp" %>
