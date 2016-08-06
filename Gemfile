@@ -28,6 +28,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'autoprefixer-rails', '~> 6.4'
+gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
 
 
 # Use Capistrano for deployment

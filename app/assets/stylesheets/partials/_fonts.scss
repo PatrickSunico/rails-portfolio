@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'PS-Fonts';
+  src:  font-url('PS-Fonts.eot');
+  src:  font-url('PS-Fonts.eot') format('embedded-opentype'),
+    font-url('PS-Fonts.ttf') format('truetype'),
+    font-url('PS-Fonts.woff') format('woff'),
+    font-url('PS-Fonts.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ps-"], [class*=" ps-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'PS-Fonts' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ps-heroku-logo:before {
+  content: "\e90c";
+}
+.ps-behance-logo:before {
+  content: "\e909";
+}
+.ps-github-logo:before {
+  content: "\e90b";
+}
+.ps-pixelHeart .path1:before {
+  content: "\e906";
+  color: rgb(0, 0, 0);
+}
+.ps-pixelHeart .path2:before {
+  content: "\e907";
+  margin-left: -1.142578125em;
+  color: rgb(255, 38, 37);
+}
+.ps-pixelHeart .path3:before {
+  content: "\e908";
+  margin-left: -1.142578125em;
+  color: rgb(255, 255, 255);
+}
+.ps-code:before {
+  content: "\e900";
+}
+.ps-codepen-logo:before {
+  content: "\e901";
+}
+.ps-linkedin-logo:before {
+  content: "\e903";
+}
+.ps-toolbox:before {
+  content: "\e904";
+}
+.ps-web-resp:before {
+  content: "\e905";
+}

@@ -7,5 +7,6 @@ module ApplicationHelper
   # Portfolio Section Structured partial
   def section_for(title, &block)
     render(:partial => 'editable-sections/portfolio-section', :locals => {:title => title, :block => block})
+
   end
 end
