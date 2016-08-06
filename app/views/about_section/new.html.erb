@@ -1,5 +1,0 @@
-<!-- New Form + form partial -->
-<%= form_for(:about, :url => {:action => "create"}) do |f|%>
-  <%= render(:partial => "form", :locals => {:f => f})%>
-  <%=f.submit("Submit") %>
-<% end %>

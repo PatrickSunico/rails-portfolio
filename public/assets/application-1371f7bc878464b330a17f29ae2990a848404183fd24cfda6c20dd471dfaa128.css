@@ -1,832 +1,3 @@
-/*Global Styles*/
-/* line 7, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-body, html {
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  height: 100%;
-  width: 100%;
-  padding: 0;
-}
-
-/* line 15, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-* {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-}
-
-/* line 20, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-h1, h2, h3, h4, h5, h6, p {
-  font-family: "Open Sans", sans-serif;
-  margin: 0;
-}
-
-/* line 24, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-p {
-  font-size: 18px;
-}
-
-/*i-1Global styles*/
-/* line 31, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-.btn-sharp {
-  padding: 18px 24px;
-  background: #50E3C2;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  border-radius: 0;
-  color: #fff;
-  -webkit-transition: all 0.30s ease-in-out;
-  transition: all 0.30s ease-in-out;
-}
-/* line 40, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-.btn-sharp:link {
-  color: white;
-}
-/* line 43, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-.btn-sharp:visited {
-  color: white;
-}
-/* line 46, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-.btn-sharp:hover {
-  background-color: #2ce7e7;
-  color: white;
-  outline: none;
-}
-/* line 51, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-.btn-sharp:active {
-  outline: none;
-  color: white;
-}
-
-/*Global Styles*/
-/* line 7, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-body, html {
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  height: 100%;
-  width: 100%;
-  padding: 0;
-}
-
-/* line 15, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-* {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-}
-
-/* line 20, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-h1, h2, h3, h4, h5, h6, p {
-  font-family: "Open Sans", sans-serif;
-  margin: 0;
-}
-
-/* line 24, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-p {
-  font-size: 18px;
-}
-
-/*i-1Global styles*/
-/* line 31, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-.btn-sharp {
-  padding: 18px 24px;
-  background: #50E3C2;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  border-radius: 0;
-  color: #fff;
-  -webkit-transition: all 0.30s ease-in-out;
-  transition: all 0.30s ease-in-out;
-}
-/* line 40, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-.btn-sharp:link {
-  color: white;
-}
-/* line 43, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-.btn-sharp:visited {
-  color: white;
-}
-/* line 46, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-.btn-sharp:hover {
-  background-color: #2ce7e7;
-  color: white;
-  outline: none;
-}
-/* line 51, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-.btn-sharp:active {
-  outline: none;
-  color: white;
-}
-
-/* line 5, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_main-header.scss */
-header {
-  position: relative;
-  width: 100%;
-  background-image: url(/assets/bg-531bc5fd055531d4f1f2579cb5732c525ea15bc5a90ff62d0290c8770af988c5.jpg);
-  text-align: center;
-  color: white;
-  /* Create the parallax scrolling effect */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-/* line 16, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_main-header.scss */
-header .vignette {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(34, 40, 44, 0.6);
-}
-
-/* line 26, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_main-header.scss */
-.header-section {
-  position: relative;
-  text-align: center;
-  padding: 200px 15px 200px;
-  width: 100%;
-}
-
-/* line 34, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_main-header.scss */
-.headline .line {
-  width: 100px;
-  border-width: 4px;
-  border-color: white;
-}
-/* line 39, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_main-header.scss */
-.headline h1 {
-  font-weight: 700;
-  text-transform: uppercase;
-  margin: 20px 0;
-  font-size: 30px;
-  text-shadow: 2px 2px #171514;
-}
-
-@media only screen and (min-width: 1200px) {
-  /* line 50, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_main-header.scss */
-  header {
-    min-height: 100%;
-  }
-
-  /* line 53, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_main-header.scss */
-  .header-section {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    padding: 0 50px;
-  }
-  /* line 61, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_main-header.scss */
-  .header-section .headline {
-    height: 100%;
-    max-width: 1000px;
-    margin: 20px auto;
-  }
-  /* line 65, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_main-header.scss */
-  .header-section .headline .line {
-    width: 500px;
-    border-width: 4px;
-    border-color: white;
-  }
-  /* line 71, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_main-header.scss */
-  .header-section .headline h1 {
-    font-size: 90px;
-    margin: 20px auto;
-  }
-  /* line 75, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_main-header.scss */
-  .header-section .headline a.btn {
-    margin: 20px 0;
-  }
-}
-/*Global Styles*/
-/* line 7, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-body, html {
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  height: 100%;
-  width: 100%;
-  padding: 0;
-}
-
-/* line 15, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-* {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-}
-
-/* line 20, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-h1, h2, h3, h4, h5, h6, p {
-  font-family: "Open Sans", sans-serif;
-  margin: 0;
-}
-
-/* line 24, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-p {
-  font-size: 18px;
-}
-
-/*i-1Global styles*/
-/* line 31, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-.btn-sharp {
-  padding: 18px 24px;
-  background: #50E3C2;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  border-radius: 0;
-  color: #fff;
-  -webkit-transition: all 0.30s ease-in-out;
-  transition: all 0.30s ease-in-out;
-}
-/* line 40, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-.btn-sharp:link {
-  color: white;
-}
-/* line 43, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-.btn-sharp:visited {
-  color: white;
-}
-/* line 46, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-.btn-sharp:hover {
-  background-color: #2ce7e7;
-  color: white;
-  outline: none;
-}
-/* line 51, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-.btn-sharp:active {
-  outline: none;
-  color: white;
-}
-
-/* line 3, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-brand {
-  border: 2px solid #50E3C2;
-  margin: 16px;
-  padding: 15px 10px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  text-decoration: overline;
-  color: white;
-}
-/* line 12, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-brand span {
-  color: white;
-  font-size: 28px;
-}
-
-/*1-1 End*/
-/*1-2 Nav bar toggle icon transition*/
-/* line 21, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-toggle {
-  margin-top: 28px;
-  margin-bottom: 22px;
-  border: none;
-  background: transparent !important;
-}
-/* line 26, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-toggle:hover {
-  background: transparent !important;
-}
-/* line 29, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-toggle .icon-bar {
-  width: 22px;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-/* line 35, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-toggle.collapsed .hamburg-top {
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
-}
-/* line 38, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-toggle.collapsed .hamburg-bot {
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
-}
-/* line 41, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-toggle.collapsed .hamburg-mid {
-  opacity: 1;
-}
-/* line 47, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-toggle .hamburg-top {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  -webkit-transform-origin: 10% 10%;
-          transform-origin: 10% 10%;
-}
-/* line 51, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-toggle .hamburg-mid {
-  opacity: 0;
-}
-/* line 54, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-toggle .hamburg-bot {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  -webkit-transform-origin: 10% 90%;
-          transform-origin: 10% 90%;
-}
-
-/*1-2 End*/
-/*1-3 Over line hover animation*/
-/* line 63, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.overline-fx span {
-  padding: 4px;
-  text-transform: uppercase;
-  text-decoration: none;
-  position: relative;
-  display: inline-block;
-}
-/* line 69, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.overline-fx span::before, .overline-fx span::after {
-  content: '';
-  border-bottom: solid 1px white;
-  position: absolute;
-  bottom: 0;
-  width: 0;
-  border-color: #50E3C2;
-}
-/* line 78, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.overline-fx span::before {
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  left: 0;
-}
-/* line 83, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.overline-fx span::after {
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  right: 0;
-}
-/* line 88, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.overline-fx span:hover::before, .overline-fx span:hover::after {
-  width: 50%;
-  color: #50E3C2;
-  -webkit-transition: all 0.35s;
-  transition: all 0.35s;
-}
-
-/*1-4 transparent navbar,Navbar links size and padding and navbar hover on and navbar sticky animation*/
-/* line 99, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-inverse {
-  background: transparent !important;
-  -webkit-transition: all .35s;
-  transition: all .35s;
-  border: none;
-}
-/* line 107, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-inverse:hover, .navbar-inverse.sticky {
-  background: #222 !important;
-}
-/* line 110, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-inverse .nav > li > a {
-  margin: 20px 20px 14px 20px;
-  padding: 10px;
-  font-size: 18px;
-  text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
-  font-weight: normal;
-  color: white;
-}
-/* line 118, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-inverse .nav > li > a:hover, .navbar-inverse .nav > li > a:focus {
-  color: #50E3C2;
-  -webkit-transition: all .35s;
-  transition: all .35s;
-}
-
-/*End*/
-@media only screen and (min-width: 768px) {
-  /* line 131, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-  .navbar-inverse {
-    padding: 8px 0;
-    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
-    transition: background .5s ease-in-out, padding .5s ease-in-out;
-  }
-
-  /* line 137, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-  .top-nav-collapse {
-    padding: 0;
-  }
-}
-/*1-5 End*/
-/*Global Styles*/
-/* line 7, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-body, html {
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  height: 100%;
-  width: 100%;
-  padding: 0;
-}
-
-/* line 15, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-* {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-}
-
-/* line 20, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-h1, h2, h3, h4, h5, h6, p {
-  font-family: "Open Sans", sans-serif;
-  margin: 0;
-}
-
-/* line 24, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-p {
-  font-size: 18px;
-}
-
-/*i-1Global styles*/
-/* line 31, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-.btn-sharp {
-  padding: 18px 24px;
-  background: #50E3C2;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  border-radius: 0;
-  color: #fff;
-  -webkit-transition: all 0.30s ease-in-out;
-  transition: all 0.30s ease-in-out;
-}
-/* line 40, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-.btn-sharp:link {
-  color: white;
-}
-/* line 43, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-.btn-sharp:visited {
-  color: white;
-}
-/* line 46, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-.btn-sharp:hover {
-  background-color: #2ce7e7;
-  color: white;
-  outline: none;
-}
-/* line 51, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-.btn-sharp:active {
-  outline: none;
-  color: white;
-}
-/*Global Styles*/
-/* line 7, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-body, html {
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  height: 100%;
-  width: 100%;
-  padding: 0;
-}
-
-/* line 15, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-* {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-}
-
-/* line 20, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-h1, h2, h3, h4, h5, h6, p {
-  font-family: "Open Sans", sans-serif;
-  margin: 0;
-}
-
-/* line 24, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-p {
-  font-size: 18px;
-}
-
-/*i-1Global styles*/
-/* line 31, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-.btn-sharp {
-  padding: 18px 24px;
-  background: #50E3C2;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  border-radius: 0;
-  color: #fff;
-  -webkit-transition: all 0.30s ease-in-out;
-  transition: all 0.30s ease-in-out;
-}
-/* line 40, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-.btn-sharp:link {
-  color: white;
-}
-/* line 43, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-.btn-sharp:visited {
-  color: white;
-}
-/* line 46, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-.btn-sharp:hover {
-  background-color: #2ce7e7;
-  color: white;
-  outline: none;
-}
-/* line 51, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-.btn-sharp:active {
-  outline: none;
-  color: white;
-}
-
-/* line 5, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_main-header.scss */
-header {
-  position: relative;
-  width: 100%;
-  background-image: url(/assets/bg-531bc5fd055531d4f1f2579cb5732c525ea15bc5a90ff62d0290c8770af988c5.jpg);
-  text-align: center;
-  color: white;
-  /* Create the parallax scrolling effect */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-/* line 16, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_main-header.scss */
-header .vignette {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(34, 40, 44, 0.6);
-}
-
-/* line 26, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_main-header.scss */
-.header-section {
-  position: relative;
-  text-align: center;
-  padding: 200px 15px 200px;
-  width: 100%;
-}
-
-/* line 34, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_main-header.scss */
-.headline .line {
-  width: 100px;
-  border-width: 4px;
-  border-color: white;
-}
-/* line 39, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_main-header.scss */
-.headline h1 {
-  font-weight: 700;
-  text-transform: uppercase;
-  margin: 20px 0;
-  font-size: 30px;
-  text-shadow: 2px 2px #171514;
-}
-
-@media only screen and (min-width: 1200px) {
-  /* line 50, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_main-header.scss */
-  header {
-    min-height: 100%;
-  }
-
-  /* line 53, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_main-header.scss */
-  .header-section {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    padding: 0 50px;
-  }
-  /* line 61, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_main-header.scss */
-  .header-section .headline {
-    height: 100%;
-    max-width: 1000px;
-    margin: 20px auto;
-  }
-  /* line 65, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_main-header.scss */
-  .header-section .headline .line {
-    width: 500px;
-    border-width: 4px;
-    border-color: white;
-  }
-  /* line 71, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_main-header.scss */
-  .header-section .headline h1 {
-    font-size: 90px;
-    margin: 20px auto;
-  }
-  /* line 75, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_main-header.scss */
-  .header-section .headline a.btn {
-    margin: 20px 0;
-  }
-}
-/*Global Styles*/
-/* line 7, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-body, html {
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  height: 100%;
-  width: 100%;
-  padding: 0;
-}
-
-/* line 15, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-* {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-}
-
-/* line 20, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-h1, h2, h3, h4, h5, h6, p {
-  font-family: "Open Sans", sans-serif;
-  margin: 0;
-}
-
-/* line 24, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-p {
-  font-size: 18px;
-}
-
-/*i-1Global styles*/
-/* line 31, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-.btn-sharp {
-  padding: 18px 24px;
-  background: #50E3C2;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  border-radius: 0;
-  color: #fff;
-  -webkit-transition: all 0.30s ease-in-out;
-  transition: all 0.30s ease-in-out;
-}
-/* line 40, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-.btn-sharp:link {
-  color: white;
-}
-/* line 43, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-.btn-sharp:visited {
-  color: white;
-}
-/* line 46, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-.btn-sharp:hover {
-  background-color: #2ce7e7;
-  color: white;
-  outline: none;
-}
-/* line 51, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
-.btn-sharp:active {
-  outline: none;
-  color: white;
-}
-
-/* line 3, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-brand {
-  border: 2px solid #50E3C2;
-  margin: 16px;
-  padding: 15px 10px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  text-decoration: overline;
-  color: white;
-}
-/* line 12, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-brand span {
-  color: white;
-  font-size: 28px;
-}
-
-/*1-1 End*/
-/*1-2 Nav bar toggle icon transition*/
-/* line 21, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-toggle {
-  margin-top: 28px;
-  margin-bottom: 22px;
-  border: none;
-  background: transparent !important;
-}
-/* line 26, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-toggle:hover {
-  background: transparent !important;
-}
-/* line 29, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-toggle .icon-bar {
-  width: 22px;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-/* line 35, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-toggle.collapsed .hamburg-top {
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
-}
-/* line 38, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-toggle.collapsed .hamburg-bot {
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
-}
-/* line 41, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-toggle.collapsed .hamburg-mid {
-  opacity: 1;
-}
-/* line 47, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-toggle .hamburg-top {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  -webkit-transform-origin: 10% 10%;
-          transform-origin: 10% 10%;
-}
-/* line 51, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-toggle .hamburg-mid {
-  opacity: 0;
-}
-/* line 54, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-toggle .hamburg-bot {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  -webkit-transform-origin: 10% 90%;
-          transform-origin: 10% 90%;
-}
-
-/*1-2 End*/
-/*1-3 Over line hover animation*/
-/* line 63, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.overline-fx span {
-  padding: 4px;
-  text-transform: uppercase;
-  text-decoration: none;
-  position: relative;
-  display: inline-block;
-}
-/* line 69, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.overline-fx span::before, .overline-fx span::after {
-  content: '';
-  border-bottom: solid 1px white;
-  position: absolute;
-  bottom: 0;
-  width: 0;
-  border-color: #50E3C2;
-}
-/* line 78, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.overline-fx span::before {
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  left: 0;
-}
-/* line 83, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.overline-fx span::after {
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  right: 0;
-}
-/* line 88, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.overline-fx span:hover::before, .overline-fx span:hover::after {
-  width: 50%;
-  color: #50E3C2;
-  -webkit-transition: all 0.35s;
-  transition: all 0.35s;
-}
-
-/*1-4 transparent navbar,Navbar links size and padding and navbar hover on and navbar sticky animation*/
-/* line 99, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-inverse {
-  background: transparent !important;
-  -webkit-transition: all .35s;
-  transition: all .35s;
-  border: none;
-}
-/* line 107, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-inverse:hover, .navbar-inverse.sticky {
-  background: #222 !important;
-}
-/* line 110, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-inverse .nav > li > a {
-  margin: 20px 20px 14px 20px;
-  padding: 10px;
-  font-size: 18px;
-  text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
-  font-weight: normal;
-  color: white;
-}
-/* line 118, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-inverse .nav > li > a:hover, .navbar-inverse .nav > li > a:focus {
-  color: #50E3C2;
-  -webkit-transition: all .35s;
-  transition: all .35s;
-}
-
-/*End*/
-@media only screen and (min-width: 768px) {
-  /* line 131, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-  .navbar-inverse {
-    padding: 8px 0;
-    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
-    transition: background .5s ease-in-out, padding .5s ease-in-out;
-  }
-
-  /* line 137, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-  .top-nav-collapse {
-    padding: 0;
-  }
-}
-/*1-5 End*/
 @charset "UTF-8";
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
@@ -840,7 +11,6 @@ p {
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
-
 
  */
 /*!
@@ -9585,7 +8755,7 @@ button.close {
   }
 }
 /*Global Styles*/
-/* line 7, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
+/* line 7, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_global.scss */
 body, html {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -9594,26 +8764,26 @@ body, html {
   padding: 0;
 }
 
-/* line 15, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
+/* line 15, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_global.scss */
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
 }
 
-/* line 20, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
+/* line 20, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_global.scss */
 h1, h2, h3, h4, h5, h6, p {
   font-family: "Open Sans", sans-serif;
   margin: 0;
 }
 
-/* line 24, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
+/* line 24, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_global.scss */
 p {
   font-size: 18px;
 }
 
 /*i-1Global styles*/
-/* line 31, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
+/* line 31, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_global.scss */
 .btn-sharp {
   padding: 18px 24px;
   background: #50E3C2;
@@ -9625,28 +8795,28 @@ p {
   -webkit-transition: all 0.30s ease-in-out;
   transition: all 0.30s ease-in-out;
 }
-/* line 40, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
+/* line 40, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_global.scss */
 .btn-sharp:link {
   color: white;
 }
-/* line 43, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
+/* line 43, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_global.scss */
 .btn-sharp:visited {
   color: white;
 }
-/* line 46, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
+/* line 46, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_global.scss */
 .btn-sharp:hover {
   background-color: #2ce7e7;
   color: white;
   outline: none;
 }
-/* line 51, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
+/* line 51, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_global.scss */
 .btn-sharp:active {
   outline: none;
   color: white;
 }
 
 /*Global Styles*/
-/* line 7, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
+/* line 7, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_global.scss */
 body, html {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -9655,26 +8825,26 @@ body, html {
   padding: 0;
 }
 
-/* line 15, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
+/* line 15, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_global.scss */
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
 }
 
-/* line 20, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
+/* line 20, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_global.scss */
 h1, h2, h3, h4, h5, h6, p {
   font-family: "Open Sans", sans-serif;
   margin: 0;
 }
 
-/* line 24, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
+/* line 24, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_global.scss */
 p {
   font-size: 18px;
 }
 
 /*i-1Global styles*/
-/* line 31, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
+/* line 31, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_global.scss */
 .btn-sharp {
   padding: 18px 24px;
   background: #50E3C2;
@@ -9686,27 +8856,178 @@ p {
   -webkit-transition: all 0.30s ease-in-out;
   transition: all 0.30s ease-in-out;
 }
-/* line 40, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
+/* line 40, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_global.scss */
 .btn-sharp:link {
   color: white;
 }
-/* line 43, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
+/* line 43, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_global.scss */
 .btn-sharp:visited {
   color: white;
 }
-/* line 46, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
+/* line 46, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_global.scss */
 .btn-sharp:hover {
   background-color: #2ce7e7;
   color: white;
   outline: none;
 }
-/* line 51, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
+/* line 51, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_global.scss */
 .btn-sharp:active {
   outline: none;
   color: white;
 }
 
-/* line 5, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_main-header.scss */
+/* line 3, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_navbar.scss */
+.navbar-brand {
+  border: 2px solid #50E3C2;
+  margin: 16px;
+  padding: 15px 10px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-decoration: overline;
+  color: white;
+  font-size: 28px;
+}
+/* line 13, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_navbar.scss */
+.navbar-brand span {
+  color: white;
+}
+
+/*1-1 End*/
+/*1-2 Nav bar toggle icon transition*/
+/* line 20, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_navbar.scss */
+.navbar-toggle {
+  margin-top: 28px;
+  margin-bottom: 22px;
+  border: none;
+  background: transparent !important;
+}
+/* line 25, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_navbar.scss */
+.navbar-toggle:hover {
+  background: transparent !important;
+}
+/* line 28, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_navbar.scss */
+.navbar-toggle .icon-bar {
+  width: 22px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+/* line 34, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_navbar.scss */
+.navbar-toggle.collapsed .hamburg-top {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+/* line 37, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_navbar.scss */
+.navbar-toggle.collapsed .hamburg-bot {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+/* line 40, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_navbar.scss */
+.navbar-toggle.collapsed .hamburg-mid {
+  opacity: 1;
+}
+/* line 46, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_navbar.scss */
+.navbar-toggle .hamburg-top {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 10% 10%;
+          transform-origin: 10% 10%;
+}
+/* line 50, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_navbar.scss */
+.navbar-toggle .hamburg-mid {
+  opacity: 0;
+}
+/* line 53, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_navbar.scss */
+.navbar-toggle .hamburg-bot {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: 10% 90%;
+          transform-origin: 10% 90%;
+}
+
+/*1-2 End*/
+/*1-3 Over line hover animation*/
+/* line 62, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_navbar.scss */
+.overline-fx span {
+  padding: 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+/* line 68, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_navbar.scss */
+.overline-fx span::before, .overline-fx span::after {
+  content: '';
+  border-bottom: solid 1px white;
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  border-color: #50E3C2;
+}
+/* line 77, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_navbar.scss */
+.overline-fx span::before {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  left: 0;
+}
+/* line 82, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_navbar.scss */
+.overline-fx span::after {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  right: 0;
+}
+/* line 87, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_navbar.scss */
+.overline-fx span:hover::before, .overline-fx span:hover::after {
+  width: 50%;
+  color: #50E3C2;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+/*1-4 transparent navbar,Navbar links size and padding and navbar hover on and navbar sticky animation*/
+/* line 98, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_navbar.scss */
+.navbar-inverse {
+  background: transparent !important;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+  border: none;
+}
+/* line 106, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_navbar.scss */
+.navbar-inverse:hover, .navbar-inverse.sticky {
+  background: #222 !important;
+}
+/* line 109, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_navbar.scss */
+.navbar-inverse .nav > li > a {
+  margin: 20px 20px 14px 20px;
+  padding: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  color: white;
+}
+/* line 117, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_navbar.scss */
+.navbar-inverse .nav > li > a:hover, .navbar-inverse .nav > li > a:focus {
+  color: #50E3C2;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+/*End*/
+@media only screen and (min-width: 768px) {
+  /* line 130, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_navbar.scss */
+  .navbar-inverse {
+    padding: 8px 0;
+    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+  }
+
+  /* line 136, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_navbar.scss */
+  .top-nav-collapse {
+    padding: 0;
+  }
+}
+/*1-5 End*/
+/* line 3, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_main-header.scss */
 header {
   position: relative;
   width: 100%;
@@ -9718,7 +9039,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 16, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_main-header.scss */
+/* line 14, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_main-header.scss */
 header .vignette {
   position: absolute;
   top: 0;
@@ -9728,7 +9049,7 @@ header .vignette {
   background-color: rgba(34, 40, 44, 0.6);
 }
 
-/* line 26, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_main-header.scss */
+/* line 24, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_main-header.scss */
 .header-section {
   position: relative;
   text-align: center;
@@ -9736,13 +9057,13 @@ header .vignette {
   width: 100%;
 }
 
-/* line 34, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_main-header.scss */
+/* line 32, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_main-header.scss */
 .headline .line {
   width: 100px;
   border-width: 4px;
   border-color: white;
 }
-/* line 39, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_main-header.scss */
+/* line 37, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_main-header.scss */
 .headline h1 {
   font-weight: 700;
   text-transform: uppercase;
@@ -9752,12 +9073,12 @@ header .vignette {
 }
 
 @media only screen and (min-width: 1200px) {
-  /* line 50, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_main-header.scss */
+  /* line 48, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_main-header.scss */
   header {
     min-height: 100%;
   }
 
-  /* line 53, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_main-header.scss */
+  /* line 51, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_main-header.scss */
   .header-section {
     position: absolute;
     top: 50%;
@@ -9765,30 +9086,30 @@ header .vignette {
     transform: translateY(-50%);
     padding: 0 50px;
   }
-  /* line 61, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_main-header.scss */
+  /* line 59, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_main-header.scss */
   .header-section .headline {
     height: 100%;
     max-width: 1000px;
     margin: 20px auto;
   }
-  /* line 65, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_main-header.scss */
+  /* line 63, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_main-header.scss */
   .header-section .headline .line {
     width: 500px;
     border-width: 4px;
     border-color: white;
   }
-  /* line 71, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_main-header.scss */
+  /* line 69, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_main-header.scss */
   .header-section .headline h1 {
     font-size: 90px;
     margin: 20px auto;
   }
-  /* line 75, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_main-header.scss */
+  /* line 73, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_main-header.scss */
   .header-section .headline a.btn {
     margin: 20px 0;
   }
 }
 /*Global Styles*/
-/* line 7, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
+/* line 7, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_global.scss */
 body, html {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -9797,26 +9118,26 @@ body, html {
   padding: 0;
 }
 
-/* line 15, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
+/* line 15, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_global.scss */
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
 }
 
-/* line 20, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
+/* line 20, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_global.scss */
 h1, h2, h3, h4, h5, h6, p {
   font-family: "Open Sans", sans-serif;
   margin: 0;
 }
 
-/* line 24, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
+/* line 24, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_global.scss */
 p {
   font-size: 18px;
 }
 
 /*i-1Global styles*/
-/* line 31, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
+/* line 31, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_global.scss */
 .btn-sharp {
   padding: 18px 24px;
   background: #50E3C2;
@@ -9828,174 +9149,211 @@ p {
   -webkit-transition: all 0.30s ease-in-out;
   transition: all 0.30s ease-in-out;
 }
-/* line 40, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
+/* line 40, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_global.scss */
 .btn-sharp:link {
   color: white;
 }
-/* line 43, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
+/* line 43, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_global.scss */
 .btn-sharp:visited {
   color: white;
 }
-/* line 46, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
+/* line 46, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_global.scss */
 .btn-sharp:hover {
   background-color: #2ce7e7;
   color: white;
   outline: none;
 }
-/* line 51, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_global.scss */
+/* line 51, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_global.scss */
 .btn-sharp:active {
   outline: none;
   color: white;
 }
 
-/* line 3, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-brand {
-  border: 2px solid #50E3C2;
-  margin: 16px;
-  padding: 15px 10px;
-  font-family: "Open Sans", sans-serif;
+/* line 5, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_about.scss */
+#about {
+  padding: 100px 0;
+}
+/* line 7, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_about.scss */
+#about .header-text {
+  padding: 1.4em 0;
+  text-align: center;
+}
+/* line 10, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_about.scss */
+#about .header-text h1 {
+  color: #50E3C2;
+  text-transform: uppercase;
   font-weight: bold;
-  text-decoration: overline;
-  color: white;
-}
-/* line 12, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-brand span {
-  color: white;
-  font-size: 28px;
-}
-
-/*1-1 End*/
-/*1-2 Nav bar toggle icon transition*/
-/* line 21, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-toggle {
-  margin-top: 28px;
-  margin-bottom: 22px;
-  border: none;
-  background: transparent !important;
-}
-/* line 26, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-toggle:hover {
-  background: transparent !important;
-}
-/* line 29, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-toggle .icon-bar {
-  width: 22px;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-/* line 35, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-toggle.collapsed .hamburg-top {
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
-}
-/* line 38, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-toggle.collapsed .hamburg-bot {
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
-}
-/* line 41, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-toggle.collapsed .hamburg-mid {
-  opacity: 1;
-}
-/* line 47, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-toggle .hamburg-top {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  -webkit-transform-origin: 10% 10%;
-          transform-origin: 10% 10%;
-}
-/* line 51, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-toggle .hamburg-mid {
-  opacity: 0;
-}
-/* line 54, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-toggle .hamburg-bot {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  -webkit-transform-origin: 10% 90%;
-          transform-origin: 10% 90%;
-}
-
-/*1-2 End*/
-/*1-3 Over line hover animation*/
-/* line 63, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.overline-fx span {
-  padding: 4px;
+  font-weight: 700px;
   text-transform: uppercase;
-  text-decoration: none;
-  position: relative;
-  display: inline-block;
 }
-/* line 69, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.overline-fx span::before, .overline-fx span::after {
-  content: '';
-  border-bottom: solid 1px white;
-  position: absolute;
-  bottom: 0;
-  width: 0;
+/* line 17, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_about.scss */
+#about .header-text hr.line, #about .header-text #services .media-body hr.line-sm, #services .media-body #about .header-text hr.line-sm {
+  width: 80px;
   border-color: #50E3C2;
-}
-/* line 78, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.overline-fx span::before {
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  left: 0;
-}
-/* line 83, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.overline-fx span::after {
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  right: 0;
-}
-/* line 88, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.overline-fx span:hover::before, .overline-fx span:hover::after {
-  width: 50%;
-  color: #50E3C2;
-  -webkit-transition: all 0.35s;
-  transition: all 0.35s;
+  border-width: 3px;
 }
 
-/*1-4 transparent navbar,Navbar links size and padding and navbar hover on and navbar sticky animation*/
-/* line 99, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-inverse {
-  background: transparent !important;
-  -webkit-transition: all .35s;
-  transition: all .35s;
-  border: none;
+/* line 27, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_about.scss */
+#about {
+  text-align: center;
 }
-/* line 107, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-inverse:hover, .navbar-inverse.sticky {
-  background: #222 !important;
+/* line 29, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_about.scss */
+#about img {
+  padding: 14px;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
 }
-/* line 110, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-inverse .nav > li > a {
-  margin: 20px 20px 14px 20px;
-  padding: 10px;
-  font-size: 18px;
+/* line 35, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_about.scss */
+#about h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #50E3C2;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 45, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_about.scss */
+  #about img {
+    height: 300px;
+    width: 300px;
+  }
+  /* line 49, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_about.scss */
+  #about h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #50E3C2;
+  }
+  /* line 55, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_about.scss */
+  #about .about-content > p.lead {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 30px;
+  }
+}
+/* line 2, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_services-section.scss */
+#services {
+  background: #22282c;
+}
+/* line 5, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_services-section.scss */
+#services .inverted-header {
+  padding: 1.4em 0;
+  text-align: center;
+}
+/* line 8, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_services-section.scss */
+#services .inverted-header h1 {
+  color: white;
   text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
-  font-weight: normal;
+  font-weight: bold;
+  font-weight: 700px;
+}
+/* line 14, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_services-section.scss */
+#services .inverted-header .line {
+  width: 80px;
+  border-color: white;
+  border-width: 3px;
+}
+
+/* line 23, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_services-section.scss */
+#services {
+  padding: 60px 0;
+  text-align: center;
+}
+/* line 26, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_services-section.scss */
+#services .media-services-wrapper {
+  padding: 30px;
+}
+/* line 29, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_services-section.scss */
+#services div.media {
+  padding: 20px 0;
+}
+/* line 33, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_services-section.scss */
+#services .media-body hr.line, #services .media-body hr.line-sm {
+  width: 180px;
+  border-color: white;
+  border-width: 3px;
+  margin: 6px 0 6px;
+}
+/* line 39, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_services-section.scss */
+#services .media-body hr.line-sm {
+  width: 140px;
+}
+/* line 44, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_services-section.scss */
+#services .media-body p {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.02rem;
   color: white;
 }
-/* line 118, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-.navbar-inverse .nav > li > a:hover, .navbar-inverse .nav > li > a:focus {
-  color: #50E3C2;
-  -webkit-transition: all .35s;
-  transition: all .35s;
+/* line 53, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_services-section.scss */
+#services h4.media-heading {
+  color: white;
+  text-align: left;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+/* line 60, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_services-section.scss */
+#services img.web-dev-image {
+  height: auto;
+  width: 60px;
+}
+/* line 64, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_services-section.scss */
+#services img.resp-design-image {
+  height: auto;
+  width: 60px;
+}
+/* line 68, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_services-section.scss */
+#services img.toolbox-image {
+  height: auto;
+  width: 60px;
 }
 
-/*End*/
-@media only screen and (min-width: 768px) {
-  /* line 131, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-  .navbar-inverse {
-    padding: 8px 0;
-    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
-    transition: background .5s ease-in-out, padding .5s ease-in-out;
-  }
-
-  /* line 137, /Users/Patrick/Desktop/portfolio-rails/personal-portfolio/app/assets/stylesheets/partials/_navbar.scss */
-  .top-nav-collapse {
-    padding: 0;
+@media only screen and (min-width: 320px) {
+  /* line 76, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_services-section.scss */
+  #services .media {
+    width: 300px;
+    margin: 0 auto;
   }
 }
-/*1-5 End*/
+@media only screen and (min-width: 991px) {
+  /* line 87, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_services-section.scss */
+  #services {
+    padding: 60px 0;
+    overflow-x: hidden;
+  }
+  /* line 90, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_services-section.scss */
+  #services .media {
+    margin: 0 auto;
+    width: 360px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  /* line 100, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_services-section.scss */
+  #services {
+    padding: 120px 0;
+    overflow-x: hidden;
+  }
+  /* line 104, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_services-section.scss */
+  #services .media {
+    margin: 0 auto;
+    width: 320px;
+  }
+  /* line 108, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_services-section.scss */
+  #services img.web-dev-image {
+    height: auto;
+    width: 92px;
+  }
+  /* line 112, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_services-section.scss */
+  #services img.resp-design-image {
+    height: auto;
+    width: 102px;
+  }
+  /* line 116, /Users/Patrick/Desktop/rails-portfolio/app/assets/stylesheets/partials/_services-section.scss */
+  #services img.toolbox-image {
+    height: auto;
+    width: 86px;
+  }
+}

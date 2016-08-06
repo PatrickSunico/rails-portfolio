@@ -1,4 +1,9 @@
+// Global
 @import 'mixins/mixins';
-@import 'partials/_global';
-@import 'partials/_main-header';
-@import 'partials/_navbar';
+@import 'partials/global';
+
+// Partials
+@import 'partials/navbar';
+@import 'partials/main-header';
+@import 'partials/about';
+@import 'partials/services-section';

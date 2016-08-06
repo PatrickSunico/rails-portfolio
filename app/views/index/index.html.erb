@@ -1,8 +1,9 @@
+<!-- Spa Page -->
 <!-- Partials -->
 <%=render(:partial => "shared/navigation") %>
 <%= render(:partial => "shared/header") %>
 
-<!-- Spa Page -->
+<!-- Save alert for form -->
 <%= flash_alerts() %>
 
 <!-- About Section -->
@@ -10,10 +11,18 @@
     <div class="container">
       <div class="row">
         <div class="about-content col-lg-12">
-          <% @about.each do |f|%>
-            <%= render(:partial => "shared/about-section", :collections => @about, :locals => {:f => f})%>
-          <% end %>
+           <%= render(:partial => "editable-sections/about-section")%>
         </div>
       </div>
     </div>
   </section>
+
+
+<!-- Services Section -->
+<section id="services">
+  <div class="container">
+    <div class="row">
+        <%= render(:partial => "editable-sections/services-section")%>
+    </div>
+  </div>
+</section>
