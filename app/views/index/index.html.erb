@@ -1,11 +1,4 @@
 <!-- Spa Page -->
-<!-- Partials -->
-<%=render(:partial => "shared/navigation") %>
-<%= render(:partial => "shared/header") %>
-
-<!-- Save alert for form -->
-<%= flash_alerts() %>
-
 <!-- About Section -->
   <section id="about">
     <div class="container">
@@ -17,7 +10,6 @@
     </div>
   </section>
 
-
 <!-- Services Section -->
 <section id="services">
   <div class="container">
@@ -26,3 +18,14 @@
     </div>
   </div>
 </section>
+
+<!-- section_for Portfolio Structured layout -->
+<%= section_for('Portfolio') do %>
+<!-- nested partials -->
+<!-- YelpCamp -->
+  <%= render(:partial => 'editable-sections/panels/yelpcamp', :locals => {:title => "YelpCamp"})%>
+
+<!-- Trollr -->
+  <%= render(:partial => 'editable-sections/panels/trollr', :locals => {:title => "Trollr"})%>
+
+<% end %>
