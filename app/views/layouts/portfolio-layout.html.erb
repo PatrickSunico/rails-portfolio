@@ -16,33 +16,12 @@
 
   <body id="page-top" data-spy="page-scroll" data-target=".navbar-fixed-top">
     <!-- Partials -->
-
+    <%= render(:partial => "shared/navigation") %>
+    <%= render(:partial => "shared/header") %>
     <!-- Save alert for form -->
     <%= flash_alerts() %>
       <%= yield %>
-
-      <footer id="footer">
-        <div class="container">
-          <div class="row">
-            <a class="contact-links" href="https://ph.linkedin.com/in/apatricksunico" target="_blank">
-              <i class="ps-linkedin-logo"></i>
-            </a>
-            <a class="contact-links" href="https://github.com/PatrickSunico" target="_blank">
-              <i class="ps-github-logo"></i>
-            </a>
-            <a class="contact-links" href="http://codepen.io/Patrick_Starr/" target="_blank">
-              <i class="ps-codepen-logo-bordered"></i>
-            </a>
-            <p class="footer-message">
-              Made by <strong>Patrick Sunico</strong> and a whole lotta love
-              <i class="ps-pixelHeart">
-                <span class="path1"></span><span class="path2"></span><span class="path3"></span>
-              </i>
-            </p>
-            <p class="copyright">&copy;	PS 2016 All rights reserved</p>
-          </div>
-        </div>
-      </footer>
+    <%= render(:partial => "shared/footer")%>
 
   </body>
 </html>
