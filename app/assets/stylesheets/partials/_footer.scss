@@ -1,0 +1,82 @@
+#footer {
+	padding: 30px 0;
+	background: #131618;
+	border-top: solid 4px #50E3C2;
+	text-align: center;
+	a.contact-links {
+		display: inline-block;
+		text-decoration: none;
+		&:link {
+			text-decoration: none;
+		}
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	i.ps-linkedin-logo {
+		font-size: 30px;
+		color: white;
+		text-align: center;
+		-webkit-transition: all 0.30s ease-in-out;
+		transition: all 0.30s ease-in-out;
+		margin: 0 20px;
+		&:hover {
+			color: #50ffc2;
+			outline: none;
+		}
+		&:active {
+			outline: none;
+			color: white;
+		}
+	}
+	i.ps-codepen-logo-bordered {
+		font-size: 30px;
+		color: white;
+		text-align: center;
+		-webkit-transition: all 0.30s ease-in-out;
+		transition: all 0.30s ease-in-out;
+		margin: 0 20px;
+		font-size: 35px;
+		&:hover {
+			color: #50ffc2;
+			outline: none;
+		}
+		&:active {
+			outline: none;
+			color: white;
+		}
+	}
+	.ps-github-logo {
+		font-size: 30px;
+		color: white;
+		text-align: center;
+		-webkit-transition: all 0.30s ease-in-out;
+		transition: all 0.30s ease-in-out;
+		margin: 0 20px;
+		&:hover {
+			color: #50ffc2;
+			outline: none;
+		}
+		&:active {
+			outline: none;
+			color: white;
+		}
+	}
+	p.footer-message {
+		color: white;
+		margin: 18px 0;
+		font-size: 18px;
+		strong {
+			color: #50E3C2;
+		}
+		.ps-pixelHeart {
+			font-size: 15px;
+		}
+	}
+	.copyright {
+		color: #706e6c;
+		font-size: 12px;
+		margin: auto 0;
+		font-weight: 700;
+	}
+}
