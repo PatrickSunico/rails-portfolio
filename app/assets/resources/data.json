@@ -1,7 +1,66 @@
-[{
+[
+  {
+  "title": "YelpCamp",
   "img": "yelpcamp.jpg",
   "info": "Airbnb clone but for famous campsites. User’s can login or signup, post new campgrounds or rate campgrounds.",
-  "link-1": "https://github.com/PatrickSunico/yelpcamp-deployed",
-  "link-2": "https://campgrounds.herokuapp.com/campgrounds"
 
+  "github": "https://github.com/PatrickSunico/yelpcamp-deployed",
+  "heroku": "https://campgrounds.herokuapp.com/campgrounds",
+  "button": [
+    {"github": "github", "heroku": "heroku"}
+  ]
+
+},
+{
+  "title": "Trollr",
+  "img": "Trollr.jpg",
+  "info": "A Simple Authentication system built on rails, prompts users to login or signup to view a secret page. PS the secret page involves a 2008 meme.",
+  "github": "https://github.com/PatrickSunico/Trollr",
+  "heroku": "https://trollr.herokuapp.com/",
+
+  "button": [
+    {"github": "github", "heroku": "heroku"}
+  ]
+
+},
+{
+  "title": "Clockr",
+  "img": "Clockr.jpg",
+  "info": "Inspired by the google app extension.'momentum'",
+  "codepen": "http://codepen.io/Patrick_Starr/pen/PNqKGz",
+
+  "button": [
+    {"codepen": "codepen"}
+  ]
+
+},
+{
+  "title": "Occupost",
+  "img": "Occupost.jpg",
+  "info": "Web Design and Logo Design for Occupost a job posting iOS Application.",
+  "behance": "https://www.behance.net/PatrickSunico",
+
+  "button": [
+    {"behance": "behance"}
+  ]
+},
+{
+  "title": "Codappy Website",
+  "img": "Wireframe.jpg",
+  "info": "I make sure I have the basic ideas all layed out so I can have a smooth transition through the actual code process.",
+  "behance": "https://www.behance.net/PatrickSunico",
+
+  "button": [
+    {"behance": "behance"}
+  ]
+},
+{
+  "title": "Codappy Logo",
+  "img": "Codappy-logo.jpg",
+  "info": "Designed a logo for my hobby company, Codappy’s vision is foreseeing results of projects which symbolizes the owl head while having stability and equality hence the inverted triangles.",
+  "behance": "https://www.behance.net/PatrickSunico",
+
+  "button": [
+    {"behance": "behance"}
+  ]
 }]

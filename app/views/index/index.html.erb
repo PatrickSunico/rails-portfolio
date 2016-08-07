@@ -3,30 +3,22 @@
 <%= render(:partial => "shared/header") %>
 <!-- Spa Page -->
 <!-- About Section -->
-  <section id="about">
-    <div class="container">
-      <div class="row">
-        <div class="about-content col-lg-12">
-           <%= render(:partial => "editable-sections/about-section")%>
-        </div>
-      </div>
-    </div>
-  </section>
+<%= render(:partial => "editable-sections/about-section")%>
 
 <!-- Renders the Services Section structure along with the partials -->
 <%= services_section('Services') do %>
   <!-- Render the panels -->
-  <%= render(:partial => 'editable-sections/services/services-panels')%>
+  <% @services.each do |services|%>
+    <%= render(:partial => 'editable-sections/services/services-panels', :locals => {:services => services})%>
+  <% end %>
 <%end%>
 
-
-
-
-<!-- section_for Portfolio Structured layout -->
+<!-- section_for _portfolio-section partial structured layout -->
+<!-- index.html.erb /controller-template -->
 <%= portfolio_section('Portfolio') do %>
   <!-- nested partials -->
   <!--  Send data from our json file and pass in local variable for it to be interpolated  -->
   <% @data.each do |data| %>
-      <%= render(:partial => 'editable-sections/panels/yelpcamp', :locals => {:title => "YelpCamp", :data => data})%>
+      <%= render(:partial => 'editable-sections/panels/panel', :locals => {:data => data})%>
   <% end %>
 <% end %>
