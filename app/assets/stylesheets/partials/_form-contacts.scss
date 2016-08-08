@@ -1,0 +1,114 @@
+.hidden {
+  display:none;
+}
+
+#contact {
+	padding: 80px 0;
+	background: #22282c;
+	.container {
+		max-width: 800px;
+	}
+	.inverted-header {
+		padding: 1.2em 0;
+		text-align: center;
+		h1 {
+			color: white;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-weight: 700;
+		}
+		.line {
+			width: 80px;
+			border-color: white;
+			border-width: 3px;
+		}
+	}
+}
+.form-wrapper {
+	margin: 0px auto;
+	background: #1b1d1f;
+	padding: 20px;
+	h2 {
+		color: white;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+	.firstMessage {
+		color: white;
+		margin: 20px 0;
+	}
+	.secondaryMessage {
+		color: white;
+		margin: 20px 0;
+	}
+	p.secondaryMessage {
+		a.email-link {
+			color: #50E3C2;
+			text-decoration: none;
+			-webkit-transition: all 0.30s ease-in-out;
+			transition: all 0.30s ease-in-out;
+			&:hover {
+				color: #00ffe8;
+			}
+		}
+	}
+	.form-group {
+		margin-bottom: 20px;
+		input[type=text] {
+			padding: 20px 20px 20px 15px;
+			border-radius: 0;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+			outline: none;
+			font-size: 16px;
+			color: #22282c;
+			&::-webkit-input-placeholder {
+				color: black;
+				font-size: 16px;
+				text-transform: uppercase;
+			}
+		}
+		textarea.form-control {
+			padding: 20px 20px 20px 15px;
+			border-radius: 0;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+			outline: none;
+			font-size: 16px;
+			color: #22282c;
+			padding: 15px 15px;
+			resize: vertical;
+			&::-webkit-input-placeholder {
+				color: black;
+				font-size: 16px;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+[type=submit] {
+	width: 100%;
+	&:link {
+		color: white;
+	}
+	&:active {
+		outline: none;
+	}
+}
+input {
+	&:-webkit-autofill {
+		&:hover {
+			-webkit-transition: background-color 5000s ease-in-out 0s;
+			transition: background-color;
+		}
+	}
+
+  &:focus {
+  	-webkit-transition: background-color 5000s ease-in-out 0s;
+  	transition: background-color;
+  }
+  &:active {
+  	-webkit-transition: background-color 5000s ease-in-out 0s;
+  	transition: background-color;
+  }
+}

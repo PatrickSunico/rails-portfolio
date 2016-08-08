@@ -1,0 +1,47 @@
+<div>
+  <% flash.each do |key, value| %>
+    <div>
+      <a id="notice" href="#" data-dismiss="alert">×</a>
+        <%= value %>
+    </div>
+  <% end %>
+</div>
+
+<section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="header-text inverted-header">
+          <h1>Contact</h1>
+          <hr class="line">
+        </div>
+        <!-- Forms -->
+        <div class="col-sm-12 form-wrapper">
+          <h2>Get In Touch</h2>
+          <p class="firstMessage">
+            Got an idea in mind? Drop me a message and say hello and I’ll get back to you as soon as possible
+          </p>
+          <p class="secondaryMessage">
+            Or if you're old school and fancy an email instead you can email me directly at <a class="email-link" href="mailto:apatricksunico@gmail.com">apatricksunico@gmail.com</a>
+          </p>
+
+          <%= form_for @contact do |f| %>
+            <div class=" form-group">
+              <%= f.text_field :name, :placeholder => "Name" , :required => true, :class => "form-control" %>
+            </div>
+            <div class="form-group">
+              <%= f.text_field :email, :placeholder => "Email", :required => true, :class => "form-control" %>
+            </div>
+
+            <div class="form-group">
+              <%= f.text_area :message,  :placeholder => "Message",:as => :text, :required => true, :class => "form-control" ,:rows => 6 %>
+            </div>
+
+            <div class= "hidden">
+              <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+            </div>
+              <%= f.submit 'Send message', :onclick => "onSubmit();", :class=> "btn btn-sharp" %>
+          <% end %>
+
+        </div>
+      </div>
+    </section>

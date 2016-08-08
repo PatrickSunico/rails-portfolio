@@ -29,6 +29,7 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'autoprefixer-rails', '~> 6.4'
 gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
 gem 'jquery-easing-rails', '~> 0.0.2'
+gem 'mail_form'
 
 
 # Use Capistrano for deployment

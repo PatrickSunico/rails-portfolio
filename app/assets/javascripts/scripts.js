@@ -30,3 +30,12 @@ $(function() {
         event.preventDefault();
     });
 });
+
+
+$(document).ready(function () {
+  function onSubmit() {
+    $("#new_contact").on("ajax:complete", function(evt, data, status, xhr){
+        $('.form-fields').val('');
+    });
+  }
+});
