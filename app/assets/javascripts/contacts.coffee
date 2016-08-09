@@ -3,7 +3,11 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $(document).ready ->
-  $("#button").on("ajax:success", (e, data, status, xhr) ->
-    $("#new_article").append xhr.responseText
-  ).on "ajax:error", (e, xhr, status, error) ->
-    $("#new_article").append "<p>ERROR</p>"
+  $("#new_contact").bind("ajax:success", (e, data, status, xhr) ->
+    # console.log(e)
+    e.preventDefault()
+    console.log(status)
+    console.log(xhr.responseText)
+    $(".alert").append("Success")
+  ).bind "ajax:error", (e, xhr, status, error) ->
+    $(".alert").append("Error")

@@ -10,11 +10,15 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
     @contact.request = request
     if @contact.deliver
-      flash[:success] = "Thanks for the message"
-      render "new"
+
+      respond_to do |format|
+        format.html { render "contacts/new", notice: "Post Successful" }
+        format.js
+      end
     else
-      flash[:error] = "Cannot Send message"
-      render :new
+      respond_to do |format|
+        format.html { render :new , notice: "Post Error"}
+      end
     end
   end
 
