@@ -1,0 +1,9 @@
+<% if @contact.errors.any? %>
+    <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this product from being saved:</h2>
+
+    <ul>
+    <% @contact.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+    </ul>
+<% end %>
