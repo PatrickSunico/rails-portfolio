@@ -1,9 +1,13 @@
-<% if @contact.errors.any? %>
-    <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this product from being saved:</h2>
-
+<% if object && object.errors.size > 0 %>
+  <div id="errorExplanation">
+    <!-- pluralize(n0 = singular, n1 = singular n2 = plural, "error = singular, errors = plural" ) -->
+    <h2><%=pluralize(object.errors.size, "error")%> prohibited this record from being saved</h2>
+    <p>There were problems with the following fields</p>
     <ul>
-    <% @contact.errors.full_messages.each do |message| %>
-      <li><%= message %></li>
-    <% end %>
+      <!-- list each error from the objects attribute types in full messages -->
+      <% object.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
     </ul>
+  </div>
 <% end %>

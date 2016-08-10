@@ -4,9 +4,9 @@ class ContactsController < ApplicationController
     # Render the contact view inside of index
     @contact = Contact.new
     respond_to do |format|
-    format.html # index.html.erb
-    format.json { render json: @contact }
-end
+      format.html # index.html.erb
+      format.json { render json: @contact }
+    end
   end
 
   def create
@@ -14,25 +14,30 @@ end
     @contact = Contact.new(contact_params)
     @contact.request = request
     if @contact.deliver
+      # Default Mail_form
+      # flash.now[:notice] = 'Thank you for your message. We will contact you soon!'
+      # render "new"
+      # # #
+
       respond_to do |format|
-        format.html { render "contacts/new", notice: "Post Successful" }
-        format.json { render json: @contact }
+        format.html { render :new, notice: "Post Successful" }
+        format.json
         format.js
-
-
       end
     else
+      # Default Mail_form
+      # flash.now[:error] = 'Cannot send message.'
+      # render :new
+
       respond_to do |format|
         format.html { render :new , notice: "Post Error"}
-        format.js { @contact.errors.any? }
+        format.js
       end
     end
   end
 
   private
-    # Save this for later improvement
     def contact_params
-      params.require(:contact).permit(:name, :message, :email, :nickname)
+      params.require(:contact).permit(:name, :message, :email)
     end
-
 end
