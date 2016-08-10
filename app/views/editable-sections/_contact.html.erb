@@ -19,7 +19,6 @@
 
            </div>
           <%= form_for @contact, remote: true do |f| %>
-
             <!-- Makes this as a partial -->
             <div class=" form-group">
               <%= f.text_field :name, :autocomplete => :off, :placeholder => "Name" ,  :class => "form-control" %>

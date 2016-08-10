@@ -20,3 +20,8 @@
       <%= render(:partial => 'editable-sections/panels/panel', :locals => {:data => data})%>
   <% end %>
 <% end %>
+
+<!-- Contact -->
+<%= contact_section('Contact') do %>
+  <%= render(:partial => "editable-sections/contact", :locals => {:contact => @contact})%>
+<% end %>

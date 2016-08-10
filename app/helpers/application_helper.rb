@@ -17,4 +17,9 @@ module ApplicationHelper
   def portfolio_section(title, &block)
     render(:partial => 'editable-sections/portfolio-section', :locals => {:title => title, :block => block})
   end
+  # Contact Section Structured partial
+  def contact_section(title, &block)
+    render(:partial => "editable-sections/contact", :locals => {:title => title, :block => block})
+  end
+
 end
