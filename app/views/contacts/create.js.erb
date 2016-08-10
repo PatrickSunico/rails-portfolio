@@ -1,8 +1,7 @@
 <% if @contact.errors.count == 0 %>
   <% if @result%>
-
-    alert("Success!");
+    $("#notice").html(" <%= j(render 'shared/success')%>")
   <% end %>
 <% else %>
-  $('#error').html("<%= j(render 'shared/errors', :object => @contact) %>");
+  $('#notice').html("<%= j(render 'shared/errors', :object => @contact) %>");
 <% end %>
