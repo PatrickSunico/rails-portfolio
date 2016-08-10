@@ -1,7 +1,10 @@
-<% if @contact.errors.count == 0 %>
-  <% if @result%>
-    $("#notice").html(" <%= j(render 'shared/success')%>")
-  <% end %>
+// if @contact.deliver && contact.errors.count == 0 send a success message
+<% if @contact && @contact.errors.count == 0%>
+  //show the message
+  $("#notice").html(" <%= j(render 'shared/success')%>");
+  // Clear the form
+  $("form#new_contact").find("input:text, textarea").val("");
 <% else %>
+  // show the errors
   $('#notice').html("<%= j(render 'shared/errors', :object => @contact) %>");
 <% end %>

@@ -14,7 +14,7 @@ class IndexController < ApplicationController
           format.json { render json: @services }
         end
       end
-    end
-    # End index
-    
+      # Contacts
+      @contact = Contact.new
+    end    # End index
 end

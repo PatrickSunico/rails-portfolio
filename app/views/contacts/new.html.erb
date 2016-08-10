@@ -15,18 +15,14 @@
             Or if you're old school and fancy an email instead you can email me directly at <a class="email-link" href="mailto:apatricksunico@gmail.com">apatricksunico@gmail.com</a>
           </p>
 
-          <div class="alert"></div>
+          <div id="notice">
 
-
+           </div>
           <%= form_for @contact, remote: true do |f| %>
-
-            <div id="notice">
-
-             </div>
 
 
             <div class=" form-group">
-              <%= f.text_field :name, :autocomplete => :off ,:placeholder => "Name" ,  :class => "form-control" %>
+              <%= f.text_field :name, :autocomplete => :off, :placeholder => "Name" ,  :class => "form-control" %>
             </div>
             <div class="form-group">
               <%= f.text_field :email, :autocomplete => :off, :pattern => '^.+@.+$', :placeholder => "Email", :class => "form-control" %>
@@ -38,7 +34,7 @@
             <div class= "hidden">
               <%= f.text_field :nickname, :autocomplete => :off, :hint => 'Leave this field blank!' %>
             </div>
-              <%= f.submit 'Send message', :class=> "btn btn-sharp", :id => "submit" %>
+              <%= f.submit 'Send message', :class=> "btn btn-sharp", :id => "submit"%>
           <% end %>
 
         </div>
