@@ -2,6 +2,9 @@
 
   <!-- Makes this as a partial -->
   <div class="form-group success">
+    <div class="notice-box">
+
+    </div>
       <%= f.error_notification%>
       <%= f.input :name, :class => "form-control", input_html: { :autocomplete => "off" } %>
       <%= f.input :email,:class => "form-control", input_html: { :autocomplete => "off" } %>
@@ -15,9 +18,7 @@
   </div>
 
   <div class="form-actions">
-    <!-- <%= f.submit 'Send message', :class=> "btn btn-sharp", role: "button", :data => {:disable_with => 'Sending...'}%> -->
-    <%= f.button :button, "Send Message".html_safe, data: {disable_with: "<i class=“fa fa-circle-o-notch fa-spin“></i> Sending..."}, :class => "btn btn-sharp" %>
-
+    <%= f.submit 'Send message', :class=> "btn btn-sharp", role: "button", :data => {:disable_with => 'Sending...'}%>
   </div>
 
 <% end %>

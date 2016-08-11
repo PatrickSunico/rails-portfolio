@@ -6,10 +6,6 @@ class Contact < MailForm::Base
 
   validates :message, length: { minimum: 10 }
 
-
-
-
-
   def headers
     {
       :subject => "Contact Form",
