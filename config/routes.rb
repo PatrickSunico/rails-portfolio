@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  root to: 'index#index'
-  get "index/download" => "index#download"
+  root 'index#index'
+  get "index/download" 
   post "contacts" => "contacts#create"
   get '*path' => redirect('/')
 

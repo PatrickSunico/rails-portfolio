@@ -1,6 +1,7 @@
 require 'json'
 class IndexController < ApplicationController
   layout 'portfolio-layout'
+
     def index
       # render either html or json
       @data = JSON.parse(File.read("#{Rails.root}/app/assets/resources/data.json")) do
@@ -18,5 +19,13 @@ class IndexController < ApplicationController
       # Contacts
       # Show form on index
       @contact = Contact.new
-    end   
+    end
+
+    def download
+      # respond_to do |format|
+        # format.js { send_file "#{Rails.root.join}/app/assets/resources/private/PS-CV.pdf", :type=> "application/pdf", :x_sendfile => true }
+        send_file "#{Rails.root.join}/app/assets/resources/private/PS-CV.pdf", :type=> "application/pdf", :x_sendfile => true
+         
+      # end
+    end
 end

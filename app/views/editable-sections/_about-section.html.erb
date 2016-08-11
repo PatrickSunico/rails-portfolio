@@ -9,7 +9,8 @@
           <%= image_tag("portrait.png", alt: "Patrick") %>
           <h2> Hi There. </h2>
           <p class="lead">The name’s Patrick I'm a web designer / developer based in Manila, Philippines. I’m a nerd who has a passion in web design and web development.</p>
-          <a href="" class="btn btn-sharp"> Download my Resume</a>
+          <%= link_to 'Download My Resume', "index/download", target: '_self', :class => "btn btn-sharp", :id => "download_link"  %>
+
       </div>
     </div>
   </div>
