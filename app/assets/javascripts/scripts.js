@@ -1,7 +1,6 @@
 // sticky Nav Animation
 
 $(window).scroll(function() {
-
     if($(this).scrollTop() > 1){
         $('nav').addClass("sticky")
     }

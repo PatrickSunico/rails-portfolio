@@ -1,0 +1,28 @@
+<section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="header-text inverted-header">
+          <h1><%= title %></h1>
+          <hr class="line">
+        </div>
+        <!-- Forms -->
+        <div class="col-sm-12 form-wrapper">
+          <h2>Get In Touch</h2>
+          <p class="firstMessage">
+            Got an idea in mind? Drop me a message and say hello and I’ll get back to you as soon as possible
+          </p>
+          <p class="secondaryMessage">
+            Or if you're old school and fancy an email instead you can email me directly at <a class="email-link" href="mailto:apatricksunico@gmail.com">apatricksunico@gmail.com</a>
+          </p>
+
+          <div id="notice">
+
+           </div>
+          <!-- Partial Rendered here -->
+          <div class="wrap">
+            <%= capture(&block)  %>
+          </div>
+
+         </div>
+       </div>
+     </section>

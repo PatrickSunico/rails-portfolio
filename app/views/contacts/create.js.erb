@@ -1,10 +1,26 @@
 // if @contact.deliver && contact.errors.count == 0 send a success message
 <% if @contact && @contact.errors.count == 0%>
   //show the message
-  $("#notice").html(" <%= j(render 'shared/success')%>");
+  $('#new_contact').remove();
+  $('.wrap').html('<%= j render("shared/form") %>');
   // Clear the form
-  $("form#new_contact").find("input:text, textarea").val("");
+  $("#new_contact").find("input[type=text], input[type=email] , textarea").val("");
+  $(" <%= j(render 'shared/success')%>").insertBefore(".form-group.success");
+  if ($(".alert-success").is(":hidden")) {
+      $(".alert-success").slideDown('slow', function() {
+          $(this).show();
+      });
+     }
+
 <% else %>
-  // show the errors
-  $('#notice').html("<%= j(render 'shared/errors', :object => @contact) %>");
+  $('#new_contact').remove();
+  $('.wrap').html('<%= j render("shared/form") %>');
+
+  if ($(".alert-danger").is(":hidden")) {
+      $(".alert-danger").fadeIn('slow', function() {
+          $(this).show();
+      });
+     }
+
+
 <% end %>

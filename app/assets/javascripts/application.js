@@ -16,4 +16,3 @@
 //= require bootstrap-sprockets
 //= require jquery.easing
 //= require scripts
-//= require contacts

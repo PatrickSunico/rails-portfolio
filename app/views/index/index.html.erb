@@ -21,7 +21,10 @@
   <% end %>
 <% end %>
 
-<!-- Contact -->
+
+<!-- Contacts -->
+<!-- Structured layout-->
 <%= contact_section('Contact') do %>
-  <%= render(:partial => "editable-sections/contact", :locals => {:contact => @contact})%>
+<!-- Form Partial-->
+  <%= render(:partial => 'shared/form')%>
 <% end %>

@@ -10,8 +10,8 @@ module ApplicationHelper
     render(:partial => 'editable-sections/portfolio-section', :locals => {:title => title, :block => block})
   end
   # Contact Section Structured partial
+  # Render a structured partial then inside of the structure partial render the form
   def contact_section(title, &block)
-    render(:partial => "editable-sections/contact", :locals => {:title => title, :block => block})
+    render(:partial => "editable-sections/contact-section", :locals => {:title => title, :block => block})
   end
-
 end

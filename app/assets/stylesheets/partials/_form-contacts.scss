@@ -54,11 +54,11 @@
 	}
 	.form-group {
 		margin-bottom: 20px;
-		input[type=text] {
+		input {
 			padding: 20px 20px 20px 15px;
 			border-radius: 0;
-			border: 1px solid #ccc;
-			box-sizing: border-box;
+			// border: 1px solid #ccc;
+			// box-sizing: border-box;
 			outline: none;
 			font-size: 16px;
 			color: #22282c;
@@ -71,7 +71,7 @@
 		textarea.form-control {
 			padding: 20px 20px 20px 15px;
 			border-radius: 0;
-			border: 1px solid #ccc;
+			// border: 1px solid #ccc;
 			box-sizing: border-box;
 			outline: none;
 			font-size: 16px;
@@ -86,15 +86,37 @@
 		}
 	}
 }
-[type=submit] {
-	width: 100%;
-	&:link {
-		color: white;
-	}
-	&:active {
-		outline: none;
-	}
+
+.form-actions {
+  .btn-sharp {
+    padding: 18px 24px;
+    width: 100%;
+    background: $primary-color;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 0;
+    color:#fff;
+    transition: all 0.30s ease-in-out;
+    &:link {
+      color:white
+    }
+    &:visited{
+      color:white;
+    }
+    &:hover {
+      background-color: rgb(44, 231, 231);
+      color: white;
+      outline: none;
+    }
+    &:active {
+      outline: none;
+      color:white;
+    }
+  }
 }
+
+
 input {
 	&:-webkit-autofill {
 		&:hover {
@@ -102,7 +124,6 @@ input {
 			transition: background-color;
 		}
 	}
-
   &:focus {
   	-webkit-transition: background-color 5000s ease-in-out 0s;
   	transition: background-color;
