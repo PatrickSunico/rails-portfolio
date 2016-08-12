@@ -1,22 +1,19 @@
-// sticky Nav Animation
-
-$(window).scroll(function() {
-    if($(this).scrollTop() > 1){
-        $('nav').addClass("sticky")
-    }
-    else{
-
-        $('nav').removeClass("sticky");
-    }
-});
-
-//jQuery to collapse the navbar on scroll
-$(window).scroll(function() {
-    if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
-    } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-    }
+$(function() {
+  $(window).scroll(function() {
+      // sticky Nav Animation
+      if($(this).scrollTop() > 1){
+          $('nav').addClass("sticky")
+      }
+      else{
+          $('nav').removeClass("sticky");
+      }
+      //jQuery to collapse the navbar on scroll
+      if ($(".navbar").offset().top > 50) {
+          $(".navbar-fixed-top").addClass("top-nav-collapse");
+      } else {
+          $(".navbar-fixed-top").removeClass("top-nav-collapse");
+      }
+  });
 });
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
@@ -28,4 +25,9 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
+
+    var hover = document.querySelectorAll('.hover-info');
+    hover.onclick = function() {
+      this.onhover.call(this);
+    }
 });
