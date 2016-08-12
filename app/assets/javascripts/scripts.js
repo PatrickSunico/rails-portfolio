@@ -25,9 +25,4 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
-
-    var hover = document.querySelectorAll('.hover-info');
-    hover.onclick = function() {
-      this.onhover.call(this);
-    }
 });
