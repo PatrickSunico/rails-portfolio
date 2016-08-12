@@ -1,19 +1,17 @@
-<div class="col-lg-4">
-  <div class="media">
-    <div class="media-left">
-      <% if services["code"].present?%>
-        <%= image_tag(services["code"], class: "web-dev-image", alt: services["alt"]) %>
-      <% elsif services["web-resp"].present? %>
-        <%= image_tag(services["web-resp"], class: "resp-design-image", alt: services["alt"]) %>
-      <% elsif services["maintenance"].present? %>
-        <%= image_tag(services["maintenance"], class: "toolbox-image", alt: services["alt"]) %>
-      <% end %>
+<div class="col-md-4">
+  <div class="panel-wrapper">
+    <div class="img-wrap">
+        <% if services["code"].present?%>
+          <%= image_tag(services["code"], class: "web-dev-image", alt: services["alt"]) %>
+        <% elsif services["web-resp"].present? %>
+          <%= image_tag(services["web-resp"], class: "resp-design-image", alt: services["alt"]) %>
+        <% elsif services["maintenance"].present? %>
+          <%= image_tag(services["maintenance"], class: "toolbox-image", alt: services["alt"]) %>
+        <% end %>
     </div>
 
-      <div class="media-body">
-        <h4 class="media-heading"><%= services["title"]%></h4>
-        <hr class="line">
-        <p><%= services["info"]%></p>
-      </div>
+    <h4 class="service-heading"><%= services["title"]%></h4>
+    <hr class="line">
+    <p class="text-muted"><%= services["info"]%></p>
   </div>
 </div>

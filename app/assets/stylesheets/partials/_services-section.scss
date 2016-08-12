@@ -1,89 +1,150 @@
-// Services
+// // Services
+$service-panel: #131618;
+$service-background: #22282c;
 #services {
-  background: #22282c;
+  background: $service-background;
   padding: 60px 0;
   text-align:center;
-}
-
-// Mobile first
-div.media {
-  padding: 20px 0;
-}
-.media-body  {
-  hr.line {
-    width: 180px;
-    border-color: white;
-    border-width: 3px;
-    margin: 6px 0 6px;
-  }
-  hr.line-sm{
-    @extend hr.line;
-    width: 140px;
-  }
-  p {
-    text-align:left;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0.02rem;
-    color:white;
-  }
-  h4.media-heading {
-    color: white;
-    text-align: left;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 0;
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
   }
 }
 
-.web-dev-image, .resp-design-image, .toolbox-image{
-  height: auto;
-  width: 60px;
-}
-
-// Media body set to 300px in width for small screen sizes.
-@include breakpoint-320-sm {
-    .media {
-      width: 300px;
-      margin: 0 auto;
+.img-wrap {
+    img.web-dev-image{
+      height: auto;
+      width: 86px;
+      margin:10px 0;
+    }
+    img.resp-design-image{
+      height: auto;
+      width: 102px;
+      margin:10px 0;
+    }
+    img.toolbox-image {
+      height: auto;
+      width: 80px;
+      margin:10px 0;
     }
 }
-// End mobile first
+.panel-wrapper {
+  padding: 30px 20px;
+  margin: 0 auto 20px auto;
+  position: relative;
+  background: $service-panel;
+  max-width: 300px;
+  border-bottom: solid 4px $primary-color;
+  hr.line {
+    width: 120px;
+    border-color: white;
+    border-width: 3px;
+    margin: 6px auto;
+   }
+   p {
+     text-align: left;
+     font-size: 16px;
+     font-weight: 500;
+     color: white;
+     margin: 10px;
+   }
 
-// Medium to Small Devices 991px
-// set width for the media container to be 360px on small-to-medium devices
-@include breakpoint-991-sm {
-  #services {
-    padding: 60px 0;
-    overflow-x:hidden;
-  }
-  .media {
-    margin: 0 auto;
-    width: 360px;
+   h4.service-heading {
+     color: white;
+     text-align: center;
+     font-weight: 700;
+     text-transform: uppercase;
+     margin: 10px 0;
+   }
+}
+
+.toolset {
+  padding: 60px 0;
+  p.lead {
+    color:white;
+    text-align: left;
   }
 }
 
-// lg-devices
-// Set width for media container to be 320px on large screens
-@include breakpoint-1200-sm {
-  #services {
-    padding: 120px 0;
-    overflow-x:hidden;
-  }
-  .media {
-    margin: 0 auto;
-    width: 320px;
-  }
-  img.web-dev-image{
-    height: auto;
-    width: 86px;
-  }
-  img.resp-design-image{
-    height: auto;
-    width: 102px;
-  }
-  img.toolbox-image {
-    height: auto;
-    width: 80px;
-  }
-}
+// // Mobile first
+// div.media {
+//   padding: 20px 0;
+// }
+// .media-body  {
+//   hr.line {
+//     width: 180px;
+//     border-color: white;
+//     border-width: 3px;
+//     margin: 6px 0 6px;
+//   }
+//   hr.line-sm{
+//     @extend hr.line;
+//     width: 140px;
+//   }
+//   p {
+//     text-align:left;
+//     font-size: 16px;
+//     font-weight: 500;
+//     letter-spacing: 0.02rem;
+//     color:white;
+//   }
+//   h4.media-heading {
+//     color: white;
+//     text-align: left;
+//     font-weight: 700;
+//     text-transform: uppercase;
+//     margin: 0;
+//   }
+// }
+//
+// .web-dev-image, .resp-design-image, .toolbox-image{
+//   height: auto;
+//   width: 60px;
+// }
+//
+// // Media body set to 300px in width for small screen sizes.
+// @include breakpoint-320-sm {
+//     .panel-wrapper {
+//       width: 300px;
+//       margin: 0 auto;
+//     }
+// }
+// // End mobile first
+//
+// // Medium to Small Devices 991px
+// // set width for the media container to be 360px on small-to-medium devices
+// @include breakpoint-991-sm {
+//   #services {
+//     padding: 60px 0;
+//     overflow-x:hidden;
+//   }
+//   .media {
+//     margin: 0 auto;
+//     width: 360px;
+//   }
+// }
+//
+// // lg-devices
+// // Set width for media container to be 320px on large screens
+// @include breakpoint-1200-sm {
+//   #services {
+//     padding: 120px 0;
+//     overflow-x:hidden;
+//   }
+//   .media {
+//     margin: 0 auto;
+//     width: 320px;
+//   }
+//   img.web-dev-image{
+//     height: auto;
+//     width: 86px;
+//   }
+//   img.resp-design-image{
+//     height: auto;
+//     width: 102px;
+//   }
+//   img.toolbox-image {
+//     height: auto;
+//     width: 80px;
+//   }
+// }
