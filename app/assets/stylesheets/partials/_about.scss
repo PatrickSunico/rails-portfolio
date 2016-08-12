@@ -1,29 +1,10 @@
-// 3.About Section
 // Global
 #about {
   padding: 100px 0;
-  .header-text {
-    padding: 1.4em 0;
-    text-align: center;
-    h1 {
-      color: #50E3C2;
-      text-transform: uppercase;
-      font-weight: bold;
-      font-weight: 700px;
-      text-transform: uppercase;
-    }
-    hr.line {
-     width: 80px;
-     border-color: #50E3C2;
-     border-width: 3px;
-    }
-  }
-}
-
-
-// Mobile First
-#about {
   text-align:center;
+}
+// Mobile First
+.about-content {
   img {
     padding: 14px;
     height: 200px;
@@ -36,10 +17,15 @@
     font-size: 30px;
     color: $primary-color;
   }
+  p.lead {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 30px;
+  }
 }
 //Desktop
 @include breakpoint-1200-sm {
-  #about {
+  .about-content {
     img {
       height: 300px;
       width: 300px;
@@ -50,7 +36,7 @@
       font-size: 40px;
       color: $primary-color;
     }
-    .about-content > p.lead {
+    p.lead {
       margin-left: 20%;
       margin-right: 20%;
       margin-bottom: 30px;

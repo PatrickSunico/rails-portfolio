@@ -1,8 +1,8 @@
 //Global Variables
 $primary-color: #50E3C2;
+$hover-button-color: #2ce7e7;
+$portfolio-buttons: #22282c;
 $font-stack: "Open Sans", sans-serif;
-
-//Media Query Breakpoints
 /*Global Styles*/
 body,html {
   -webkit-font-smoothing: antialiased;
@@ -11,7 +11,6 @@ body,html {
   width: 100%;
   padding: 0;
 }
-
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -27,33 +26,62 @@ p {
   font-size: 18px;
 }
 
-/*i-1Global styles*/
+
+
+// Lightblue titles
+.inverted-header {
+	padding: 1.4em 0;
+	text-align: center;
+	h1 {
+		color: $primary-color;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-weight: 700;
+	}
+	.line {
+		width: 80px;
+		border-color: $primary-color;
+		border-width: 3px;
+	}
+}
+// White colored Titles
+.header-text {
+  padding: 1.4em 0;
+  text-align: center;
+	h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-weight: 700;
+    color: #fff;
+	}
+	.line {
+    width: 80px;
+		border-color: #fff;
+		border-width: 3px;
+	}
+}
 
 //Button Global Style
-
-  .btn-sharp {
-    padding: 18px 24px;
-    background: $primary-color;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    border-radius: 0;
-    color:#fff;
-    transition: all 0.30s ease-in-out;
-    text-decoration: none;
-    &:link {
-      color:white
-    }
-    &:visited{
-      color:white;
-    }
-    &:hover {
-      background-color: rgb(44, 231, 231);
-      color: white;
-      outline: none;
-    }
-    &:active {
-      outline: none;
-      color:white;
-    }
+.btn-sharp {
+  padding: 18px 24px;
+  background: $primary-color;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 0;
+  color:#fff;
+  transition: all 0.30s ease-in-out;
+  text-decoration: none;
+  &:link, &visited {
+    color:white
   }
+  &:hover {
+    background-color: $hover-button-color;
+    color: white;
+    outline: none;
+  }
+  &:active {
+    outline: none;
+    color:white;
+  }
+}

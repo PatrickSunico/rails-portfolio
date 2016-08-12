@@ -1,44 +1,8 @@
 // Globals
 #portfolio {
 	padding: 100px 0;
-	.header-text {
-		padding: 1.4em 0;
-		text-align: center;
-		h1 {
-			color: #50E3C2;
-			text-transform: uppercase;
-			font-weight: bold;
-			font-weight: 700;
-		}
-		.line {
-			width: 80px;
-			border-color: #50E3C2;
-			border-width: 3px;
-		}
-		#services {
-			.media-body {
-				.line-sm {
-					width: 80px;
-					border-color: #50E3C2;
-					border-width: 3px;
-				}
-			}
-		}
-	}
 }
-#services {
-	.media-body {
-		#portfolio {
-			.header-text {
-				hr.line-sm {
-					width: 80px;
-					border-color: #50E3C2;
-					border-width: 3px;
-				}
-			}
-		}
-	}
-}
+
 .panel-md {
 	margin: 0 auto 20px auto;
 	position: relative;
@@ -48,6 +12,7 @@
 		margin: 0 auto;
 	}
 }
+// Hover Animation
 .hover-info {
 	color: white;
 	opacity: 0;
@@ -64,6 +29,7 @@
 		opacity: 1;
 	}
 }
+// On Hover information
 .info-wrapper {
 	width: 100%;
 	text-align: left;
@@ -84,7 +50,7 @@
 	.btn-position {
 		margin: 10px 0;
 		.btn.btn-sharp {
-			background: #22282c;
+			background: $portfolio-buttons;
 			font-size: 16px;
 		}
 	}
@@ -93,42 +59,39 @@
 
 // Default for md-lg screens
 @media (min-width: 481px) {
-	#portfolio {
-		.info-wrapper {
-			padding: 0 50px;
-			.project-title {
-				font-size: 32px;
-			}
-			span.info {
-				font-size: 22px;
-			}
-			.btn-position {
-				button {
-					&:nth-child(2) {
-						margin-left: 10px;
-					}
+	.info-wrapper {
+		padding: 0 50px;
+
+		.project-title {
+			font-size: 32px;
+		}
+		span.info {
+			font-size: 18px;
+		}
+		.btn-position {
+			button {
+				&:nth-child(2) {
+					margin-left: 10px;
 				}
 			}
 		}
+
 	}
 }
 // Default for sm screens
 @media (min-width: 320px) and (max-width: 480px) {
-	#portfolio {
-		.info-wrapper {
-			padding: 0 20px;
-			.project-title {
-				font-size: 24px;
-			}
-			span.info {
-				font-size: 14px;
-			}
-			.btn-position {
-				.btn.btn-sharp {
-					margin: 4px;
-					padding: 4px 6px;
-					font-size: 12px;
-				}
+	.info-wrapper {
+		padding: 0 20px 0;
+		.project-title {
+			font-size: 24px;
+		}
+		span.info {
+			font-size: 14px;
+		}
+		.btn-position {
+			.btn.btn-sharp {
+				padding: 4px 6px;
+				font-size: 12px;
 			}
 		}
 	}

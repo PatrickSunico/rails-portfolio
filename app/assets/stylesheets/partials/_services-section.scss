@@ -1,55 +1,32 @@
 // Services
 #services {
   background: #22282c;
-
-  .inverted-header {
-   padding: 1.4em 0;
-   text-align: center;
-    h1 {
-      color: white;
-      text-transform: uppercase;
-      font-weight: bold;
-      font-weight: 700px;
-    }
-    .line {
-      width: 80px;
-      border-color: white;
-      border-width: 3px;
-    }
-  }
+  padding: 60px 0;
+  text-align:center;
 }
 
 // Mobile first
-#services {
-  padding: 60px 0;
-  text-align:center;
-  .media-services-wrapper {
-    padding: 30px;
+div.media {
+  padding: 20px 0;
+}
+.media-body  {
+  hr.line {
+    width: 180px;
+    border-color: white;
+    border-width: 3px;
+    margin: 6px 0 6px;
   }
-  div.media {
-    padding: 20px 0;
+  hr.line-sm{
+    @extend hr.line;
+    width: 140px;
   }
-  .media-body  {
-    hr.line {
-      width: 180px;
-      border-color: white;
-      border-width: 3px;
-      margin: 6px 0 6px;
-    }
-    hr.line-sm{
-      @extend hr.line;
-      width: 140px;
-    }
-
-    p {
-      text-align:left;
-      font-size: 16px;
-      font-weight: 500;
-      letter-spacing: 0.02rem;
-      color:white;
-    }
+  p {
+    text-align:left;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.02rem;
+    color:white;
   }
-
   h4.media-heading {
     color: white;
     text-align: left;
@@ -57,27 +34,19 @@
     text-transform: uppercase;
     margin: 0;
   }
-  img.web-dev-image{
-    height: auto;
-    width: 60px;
-  }
-  img.resp-design-image{
-    height: auto;
-    width: 60px;
-  }
-  img.toolbox-image {
-    height: auto;
-    width: 60px;
-  }
 }
+
+.web-dev-image, .resp-design-image, .toolbox-image{
+  height: auto;
+  width: 60px;
+}
+
 // Media body set to 300px in width for small screen sizes.
 @include breakpoint-320-sm {
-  #services {
     .media {
       width: 300px;
       margin: 0 auto;
     }
-  }
 }
 // End mobile first
 
@@ -87,10 +56,10 @@
   #services {
     padding: 60px 0;
     overflow-x:hidden;
-    .media {
-      margin: 0 auto;
-      width: 360px;
-    }
+  }
+  .media {
+    margin: 0 auto;
+    width: 360px;
   }
 }
 
@@ -100,22 +69,21 @@
   #services {
     padding: 120px 0;
     overflow-x:hidden;
-
-    .media {
-      margin: 0 auto;
-      width: 320px;
-    }
-    img.web-dev-image{
-      height: auto;
-      width: 92px;
-    }
-    img.resp-design-image{
-      height: auto;
-      width: 102px;
-    }
-    img.toolbox-image {
-      height: auto;
-      width: 86px;
-    }
+  }
+  .media {
+    margin: 0 auto;
+    width: 320px;
+  }
+  img.web-dev-image{
+    height: auto;
+    width: 86px;
+  }
+  img.resp-design-image{
+    height: auto;
+    width: 102px;
+  }
+  img.toolbox-image {
+    height: auto;
+    width: 80px;
   }
 }

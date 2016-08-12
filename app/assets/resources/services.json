@@ -1,19 +1,19 @@
 [
   {
     "title": "Web Development",
-    "img": "code.svg",
+    "code": "code.svg",
     "alt": "code",
     "info": "I make sure every website is programmed into sweet beautiful code and properly maintained into all devices ."
   },
   {
     "title": "Responsive Design",
-    "img": "web-resp.svg",
+    "web-resp": "web-resp.svg",
     "alt": "design",
     "info": "I keep my design samples simple. Without sacrificing any user-experience in between desktop or mobile views."
   },
   {
     "title": "Maintenance",
-    "img": "toolbox.svg",
+    "maintenance": "toolbox.svg",
     "alt": "maintenance",
     "info": "When it comes to maintenance. I make sure the site works, with no bugs or errors during or after launch day."
   }
