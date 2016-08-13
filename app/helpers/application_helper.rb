@@ -9,8 +9,6 @@ module ApplicationHelper
     render(:partial => 'editable-sections/toolset-section', :locals => {:title => title, :block => block})
   end
 
-
-
   # Portfolio Section Structured partial
   def portfolio_section(title, &block)
     render(:partial => 'editable-sections/portfolio-section', :locals => {:title => title, :block => block})

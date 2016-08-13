@@ -6,7 +6,7 @@
   $("#new_contact").find("input[type=text], input[type=email] , textarea").val("");
   // Render the success popup inside of the .notice-box
   $(" <%= j(render 'shared/success')%>").appendTo(".notice-box");
-  // show and hide the message within 2 seconds
+  // show and hide the message within 8 seconds
   if($(".alert-success").is(":hidden")) {
       $(".alert-success").fadeIn('slow', function() {
           $(this).show();
@@ -29,7 +29,7 @@
       .fadeIn('slow', function() {
           $(this).show();
       });
-      // remove the message after 2 seconds
+      // remove the message after 8 seconds
       setTimeout(function(){
         $('.alert-danger').fadeOut('slow', function(){
           $(this).remove;

@@ -22,10 +22,6 @@ class IndexController < ApplicationController
     end
 
     def download
-      # respond_to do |format|
-        # format.js { send_file "#{Rails.root.join}/app/assets/resources/private/PS-CV.pdf", :type=> "application/pdf", :x_sendfile => true }
         send_file "#{Rails.root.join}/app/assets/resources/private/PS-CV.pdf", :type=> "application/pdf", :x_sendfile => true
-         
-      # end
     end
 end

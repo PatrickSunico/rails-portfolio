@@ -2,7 +2,6 @@
 <!-- Spa Page -->
 <!-- About Section -->
 <%= render(:partial => "editable-sections/about-section")%>
-
 <!-- Renders the Services Section structure along with the partials -->
 <%= services_section('Services') do %>
   <!-- Render the panels -->
@@ -11,10 +10,13 @@
   <% end %>
 <%end%>
 
+<%= toolset_section('Skills Compliment Great Tools') do %>
+  <%= render(:partial => 'editable-sections/toolset-panel/toolset-panel')%>
+<% end %>
+
 <!-- section_for _portfolio-section partial structured layout -->
 <!-- index.html.erb /controller-template -->
 <%= portfolio_section('Portfolio') do %>
-  <!-- nested partials -->
   <!--  Send data from our json file and pass in local variable for it to be interpolated  -->
   <% @data.each do |data| %>
       <%= render(:partial => 'editable-sections/panels/panel', :locals => {:data => data})%>
