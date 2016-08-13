@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'robots.:format' => 'robots#index'
   root 'index#index'
   get "index/download"
   post "contacts" => "contacts#create"
