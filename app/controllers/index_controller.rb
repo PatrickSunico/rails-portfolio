@@ -2,9 +2,6 @@ require 'json'
 class IndexController < ApplicationController
   layout 'portfolio-layout'
     def index
-      set_meta_tags title: 'Member Login',
-              description: 'Member login page.',
-              keywords: 'Site, Login, Members'
       # render either html or json
       @data = JSON.parse(File.read("#{Rails.root}/app/assets/resources/data.json")) do
         respond_to do |format|

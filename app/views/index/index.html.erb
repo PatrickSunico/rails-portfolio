@@ -1,30 +1,26 @@
-
-<!-- Spa Page -->
-<!-- About Section -->
+<!-- About Structured Partial -->
 <%= render(:partial => "editable-sections/about-section")%>
-<!-- Renders the Services Section structure along with the partials -->
+
+<!-- Services Structured Layout -->
 <%= services_section('Services') do %>
-  <!-- Render the panels -->
   <% @services.each do |services|%>
     <%= render(:partial => 'editable-sections/services/services-panels', :locals => {:services => services})%>
   <% end %>
 <%end%>
 
+<!-- Toolset Structured Layout -->
 <%= toolset_section('Skills Compliment Great Tools') do %>
   <%= render(:partial => 'editable-sections/toolset-panel/toolset-panel')%>
 <% end %>
 
-<!-- section_for _portfolio-section partial structured layout -->
-<!-- index.html.erb /controller-template -->
+<!-- Portfolio Structured Layout -->
 <%= portfolio_section('Portfolio') do %>
-  <!--  Send data from our json file and pass in local variable for it to be interpolated  -->
   <% @data.each do |data| %>
       <%= render(:partial => 'editable-sections/panels/panel', :locals => {:data => data})%>
   <% end %>
 <% end %>
 
-<!-- Contacts -->
-<!-- Structured layout-->
+<!-- Contact Structured Layout -->
 <%= contact_section('Contact') do %>
 <!-- Form Partial-->
   <%= render(:partial => 'shared/form')%>
