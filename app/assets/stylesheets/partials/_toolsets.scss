@@ -4,60 +4,57 @@
   padding: 100px 0;
   background: #fff;
 }
-
-p.lead.text {
-  color:black;
-  text-align: left;
-  margin: 20px;
-}
+// Mobile First
 // Mobile
 .tools-section {
   padding: 20px 0;
   color: #000;
   height: auto;
-  text-align: center;
   h3{
-    text-align:left;
+    text-align:center;
     margin: 15px;
     text-transform: uppercase;
     font-weight: 500;
   }
   h5 {
-    display:inline-block;
+    display:block;
     vertical-align: middle;
     float: none;
     letter-spacing: 0;
     text-transform: uppercase;
     font-size: 14px;
+    text-align:center;
   }
   i[class^='ps-'] {
     font-size: 25px;
     vertical-align: middle;
-    text-align: left;
+    text-align: center;
   }
   li{
     margin: 15px auto;
     list-style-type: none;
-    text-align: left;
+    text-align: center;
   }
 }
-
  // End Globals
-
 // Default lg-md screens
 @include breakpoint-768-sm {
   .tools-section {
+    h3 {
+      text-align: left;
+    }
     h5 {
       display:inline-block;
-      vertical-align: middle;
-      float: none;
       margin: 0 8px;
-      letter-spacing: 0;
-      text-transform: uppercase;
       font-size: 16px;
+      text-align: left;
     }
     i[class^='ps-'] {
       font-size: 22px;
+      text-align: left;
+    }
+    li{
+      text-align: left;
     }
   }
 }
@@ -65,17 +62,20 @@ p.lead.text {
 // Default lg-screens
 @include breakpoint-1200-sm {
   .tools-section {
+    h3 {
+      text-align: left;
+    }
     h5 {
       display:inline-block;
-      vertical-align: middle;
-      float: none;
-      margin: 0 8px;
-      letter-spacing: 0;
-      text-transform: uppercase;
       font-size: 14px;
+      text-align: left;
     }
     i[class^='ps-'] {
       font-size: 35px;
+      text-align:left;
+    }
+    li{
+      text-align: left;
     }
   }
 }

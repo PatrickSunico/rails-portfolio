@@ -1,41 +1,41 @@
-<div class="col-md-6">
-  <div class="panel-md">
-     <%= image_tag(data["img"], class: "img-responsive", alt: "Portfolio-image")%>
-     <!--if Hover animation display this -->
-     <div class="touch hover-info">
-       <div class="info-wrapper">
-           <!--Title-->
-           <h2 class="project-title"><%= data["title"] %></h2>
-           <!--Info-->
-           <span class="info">
-             <%= data["info"] %>
-           </span>
-           <!-- Button -->
-          <!-- _panel.html.erb -->
-           <div class="btn-position">
-             <% if data["github"] && ["heroku"].present?%>
-               <a href="<%= data["github"] %>" target="_blank" class="btn btn-sharp">
-                  <%= data["button"][0]["github"]%>
-                  <i class="ps-github-logo"></i>
-               </a>
-               <a href="<%= data["heroku"] %>" target="_blank" class="btn btn-sharp">
-                 <%=data["button"][0]["heroku"] %>
-                 <i class="ps-heroku-logo"></i>
-               </a>
-               <% elsif data["codepen"].present?%>
-               <a href="<%= data["codepen"] %>" target="_blank" class="btn btn-sharp">
-                  <%= data["button"][0]["codepen"]%>
-                  <i class="ps-codepen-logo-inverted"></i>
-               </a>
-               <% elsif data["behance"].present?%>
-               <a href="<%= data["behance"] %>" target="_blank" class="btn btn-sharp">
-                  <%= data["button"][0]["behance"]%>
-                  <i class="ps-behance-logo"></i>
-               </a>
-             <% end %>
-           </div>
+  <div class="col-md-6">
+    <div class="panel-md">
+       <%= image_tag(data["img"], class: "img-responsive", alt: "Portfolio-image")%>
+       <!--if Hover animation display this -->
+       <div class="touch hover-info">
+         <div class="info-wrapper">
+             <!--Title-->
+             <h2 class="project-title"><%= data["title"] %></h2>
+             <!--Info-->
+             <span class="info">
+               <%= data["info"] %>
+             </span>
+             <!-- Button -->
+            <!-- _panel.html.erb -->
+             <div class="btn-position">
+               <% if data["github"] && ["heroku"].present?%>
+                 <a href="<%= data["github"] %>" target="_blank" class="btn btn-sharp">
+                    <%= data["button"][0]["github"]%>
+                    <i class="ps-github-logo"></i>
+                 </a>
+                 <a href="<%= data["heroku"] %>" target="_blank" class="btn btn-sharp">
+                   <%=data["button"][0]["heroku"] %>
+                   <i class="ps-heroku-logo"></i>
+                 </a>
+                 <% elsif data["codepen"].present?%>
+                 <a href="<%= data["codepen"] %>" target="_blank" class="btn btn-sharp">
+                    <%= data["button"][0]["codepen"]%>
+                    <i class="ps-codepen-logo-inverted"></i>
+                 </a>
+                 <% elsif data["behance"].present?%>
+                 <a href="<%= data["behance"] %>" target="_blank" class="btn btn-sharp">
+                    <%= data["button"][0]["behance"]%>
+                    <i class="ps-behance-logo"></i>
+                 </a>
+               <% end %>
+             </div>
 
+         </div>
        </div>
-     </div>
+    </div>
   </div>
-</div>

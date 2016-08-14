@@ -26,6 +26,16 @@ p {
   font-size: 18px;
 }
 
+p.lead.text {
+  color:black;
+  text-align: left;
+  margin: 40px 20px;
+  letter-spacing: 0.02rem;
+}
+p.lead.text-center {
+  margin: 40px 0;
+}
+
 // Lightblue titles
 .inverted-header {
 	padding: 1.4em 0;
