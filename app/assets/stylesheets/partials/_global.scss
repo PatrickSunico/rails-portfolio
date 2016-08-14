@@ -1,4 +1,3 @@
-//Global Variables
 $primary-color: #50E3C2;
 $hover-button-color: #2ce7e7;
 $portfolio-buttons: #22282c;
@@ -34,6 +33,7 @@ p.lead.text {
 }
 p.lead.text-center {
   margin: 40px 0;
+
 }
 
 // Lightblue titles
@@ -103,34 +103,3 @@ p.lead.text-center {
     color:white;
   }
 }
-
-// Responsive Text Do Tomorrow
-// @media screen and (max-width: 992px) {
-//   p,.btn,input,div,span,h4 {
-//     font-size: 95%;
-//   }
-//   h1 {
-//     font-size: 24px;
-//   }
-//   h2 {
-//     font-size: 22px;
-//   }
-//   h3 {
-//     font-size: 18px;
-//   }
-// }
-//
-// @media screen and (max-width: 768px) {
-//   p,.btn,input,div,span,h4 {
-//     font-size: 90%;
-//   }
-//   h1 {
-//     font-size: 20px;
-//   }
-//   h2 {
-//     font-size: 18px;
-//   }
-//   h3 {
-//     font-size: 16px;
-//   }
-// }

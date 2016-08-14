@@ -5,3 +5,4 @@
 //= require bootstrap/collapse
 //= require jquery.easing
 //= require scripts
+//= require google_analytics
