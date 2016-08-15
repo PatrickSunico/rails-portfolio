@@ -21,6 +21,6 @@ class IndexController < ApplicationController
     end
 
     def download
-        send_file "#{Rails.root.join}/app/assets/resources/private/PS-CV.pdf", :type=> "application/pdf", :x_sendfile => true
+        send_file "#{Rails.root.join}/app/assets/resources/private/Patrick_Sunico_CV.pdf", :type=> "application/pdf", disposition: 'inline'
     end
 end
